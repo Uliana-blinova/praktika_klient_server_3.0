@@ -28,9 +28,13 @@ export default createStore({
     }
   },
   actions: {
-    logout({ commit }) {
-      commit('SET_TOKEN', '')
-      commit('SET_USER', null)
-    }
+  async authLogin({ commit }, credentials) {
+  },
+  async authRegister({ commit }, userData) {
+  },
+  logout({ commit }) {
+    commit('SET_TOKEN', '')
+    commit('SET_USER', null)
   }
+}
 })
